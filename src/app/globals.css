@@ -2,20 +2,186 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+/* Slide Content */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+
+@keyframes color-change {
+  0% {
+    color: #ff5733;
+  }
+  50% {
+    color: #33c9ff;
+  }
+  100% {
+    color: #ff5733;
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite, color-change 5s linear infinite;
+}
+
+
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 87, 51, 0.8), 0 0 20px rgba(255, 87, 51, 0.6);
+}
+
+
+
+
+
+
+/* card */
+
+
+.card {
+  width: 320px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 1.2s;
+}
+
+.card:hover .front-card {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back-card {
+  transform: rotateY(0);
+}
+
+.front-card {
+  border-radius: 40px;
+  background-color: #f7f7fa;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.back-card {
+  border-radius: 40px;
+  background-color: #f7f7fa;
+  transform: rotateY(180deg);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+
+.NavigationMenuTrigger[data-state="open"] {
+  color: rgb(220 38 38); /* text-red-600 */
+}
+
+.NavigationMenuContent {
+  animation: slideDown 200ms ease-out;
+  transform-origin: top center;
+  display: none;
+  transition: opacity 0.2s, visibility 0.2s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.NavigationMenuContent[data-state="open"] {
+  animation: slideDown 200ms ease-out;
+  display: block;
+}
+
+.NavigationMenuItem:hover .NavigationMenuContent,
+.NavigationMenuContent[data-state="open"] {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.NavigationMenuItem {
+  position: relative;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+    opacity: 0.2;
+  }
+  to {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.animate-progress {
+  animation: progress 5s linear;
+}
+
+.ty{
+  border-radius: 0px 0px 0px 1500px;
 }

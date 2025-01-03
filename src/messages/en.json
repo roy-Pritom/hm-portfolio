@@ -1,0 +1,274 @@
+{
+  "Index": {
+    "title": "Bangla-English Translator",
+    "inputPlaceholder": "Enter text to translate",
+    "translateButton": "Translate",
+    "translatedText": "Translated Text"
+  },
+  "p": {
+    "title": "I am a Boss"
+  },
+  "service": [
+    {
+      "title": "Travel Agency",
+      "description": "We guarantee you the best deals traveling experiences at affordable prices so you can make memories that last for a lifetime.",
+      "icon": "✈️",
+      "image": "/home/s1.webp"
+    },
+    {
+      "title": "Working Visa",
+      "description": "We process the most affordable and guaranteed work permits from developed and well-established countries.",
+      "icon": "🛂",
+      "image": "/home/s2.webp"
+    },
+    {
+      "title": "Web Design & Development",
+      "description": "We are experienced in designing and developing web solutions that attract your customers and take your business to the next level.",
+      "icon": "💻",
+      "image": "/home/s3.webp"
+    },
+    {
+      "title": "Software Development",
+      "description": "We have experience delivering robust, quality, cost-effective, and custom software development services with the usage of the latest technology.",
+      "icon": "📱",
+      "image": "/home/s4.webp"
+    },
+    {
+      "title": "Tender",
+      "description": "Filling tenders? Not sure about the right pricing? Contact us for worry-free filling. We will give our best for your tender process.",
+      "icon": "📑",
+      "image": "/home/s5.webp"
+    },
+    {
+      "title": "Import Export",
+      "description": "Our exporting local products to foreign countries easily gives higher profits. Trust us to be the mediator between the importer and exporter.",
+      "icon": "🚢",
+      "image": "/home/s6.webp"
+    },
+    {
+      "title1":"Our",
+      "title2":"Services",
+      "subtitle": "We provide the best services at reasonable prices."
+    }
+  ],
+
+  "feature": [
+    {
+      "title": "Hassle Free Approach",
+      "description": "We provide multiple services for which you can reach us without any hassle.",
+      "icon": "💼"
+    },
+    {
+      "title": "Expert in Export and Import",
+      "description": "We understand the market need and try to deliver the best in class product.",
+      "icon": "🚢"
+    },
+    {
+      "title": "Software Design & Development",
+      "description": "We make sure to provide your service on time every time everywhere.",
+      "icon": "💻"
+    },
+    {
+      "title": "Government Approved Travel Agency",
+      "description": "We have been serving you since 9 years and counting so we can be your partner on every aspect.",
+      "icon": "✈️"
+    }
+  ],
+  "whyChooseUs": {
+    "title": "Why You Will Choose Us",
+    "description": "Focusing on client success, our team takes a balanced, customized approach to each service request from the discovery all the way beyond.",
+    "points": [
+      "A Wide Spectrum Of Skills & Experience.",
+      "A Proven Track Record.",
+      "Satisfaction Guaranteed.",
+      "High Touch Communication."
+    ],
+    "btn": "Read More"
+  },
+
+  "whoWeAre": {
+    "position":"Managing Director",
+    "name": "Hasan Rubel",
+    "title1": "Who",
+    "title2": "We Are",
+    "subtitle": "Get to know about our company",
+    "description": "From an institutional point of view, our ﬁrst task is to ensure your customer service is satisfactory. You are not just a customer, we will always have a customer network through you, and with that in mind, we always try to work with honesty and integrity. In keeping with words and deeds, I request you to go to our organization at least once before making your decision. We care enough about our promises and always strive to give you the highest level of service. The lifeblood of an organization is its customers, we grow every day with the direct or indirect cooperation of all these new people. So, we are also a kind of dependent on all these consumers. Therefore, we have to ensure the protection of the interests of consumers from the central position at once. In the course of time, we are doing. How much transparency, accountability and dedication are left to you and time.",
+    "btn":"Read More"
+  },
+  "progress":{
+    "title":"Tips & Articles",
+    "subtitle":"We have been providing the service",
+    "year":"Years"
+  },
+
+  "gallery":{
+   "title":"Gallery",
+   "Favorites":"Favorites",
+   "btn":"See All"
+  },
+
+  "travelAgency": {
+    "title": "Travel Agency",
+    "subtitle": "Your trusted partner for safe migration, reliable visa processing, and affordable travel solutions.",
+    "des": "HM Expo Private Limited, a government-registered travel agency (Certificate No. 0012398), offers trustworthy visa processing and migration services at affordable rates. We ensure safe migration and customer satisfaction, exporting over 2,000 skilled workers to countries like Saudi Arabia, Malaysia, and Dubai. Services include work, students, Hajj, and visit visas."
+  },
+  
+    "tenderService": {
+      "title": "Tender Service",
+      "subtitle": "Delivering efficient tender solutions with exceptional quality for national and international organizations.",
+      "des": "HM Expo Private Limited provides tender supplies to foreign NGOs, government, and non-government organizations. Managed by skilled professionals, we ensure efficient service at your doorstep. From national to international tenders, we handle all procedures and regulations, guaranteeing customer satisfaction and exceptional quality every time."
+    },
+  
+    "webDesignDevelopment": {
+      "title": "Web Design & Development",
+      "subtitle": "Crafting user-friendly websites that grow your business locally and globally with trusted expertise.",
+      "des": "In today’s digital era, HM Expo Private Limited is your trusted partner for web design and development in Bangladesh. We craft websites that convert visitors into loyal customers and elevate your business locally and internationally. From consultation to maintenance, our skilled team delivers user-friendly, professional, and cost-effective websites tailored to your needs."
+    },
+    "softwareDevelopment": {
+    "title": "Software Development",
+    "subtitle": "Transforming ideas into smart solutions with reliable, customized software development services.",
+    "des": "In today’s fast-paced world, software is essential to boost efficiency and productivity. HM Expo Private Limited is your go-to software development partner in Bangladesh. We deliver reliable, cost-effective, and customized solutions tailored to your business needs. From consultation to maintenance, our expert team ensures quality and on-time delivery, turning your ideas into smart solutions."
+  },
+  "visaAndAirTicketing": {
+    "title": "Visa and Air Ticketing",
+    "subtitle": "Simplifying your journey to overseas work with trusted visa and air ticketing solutions.",
+    "des": "HM Expo Private Limited provides exceptional work visa services for countries like Saudi Arabia, Vietnam, Singapore, Kuwait, Qatar, Maldives, and more. Our experienced consultants ensure a smooth, stress-free process at an economical price, meeting all visa and job requirements. Trust us for reliable and affordable solutions to achieve your overseas work goals."
+  },
+  "importAndExport": {
+    "title": "Import & Export",
+    "subtitle": "Bridging borders with quality imports and exports, connecting markets with trust and excellence.",
+    "des": "HM Expo Private Limited specializes in the export of betel nut, green coconut, dry fish, and betel, while importing premium items such as Indian women's clothing, shoes, easy bikes, electric bicycles, Arabian dates, construction stones, pampers, men's trimmers, full cream powder, and more. Quality and reliability define our trade."
+  },
+  "hmWedding": {
+    "title": "HM Wedding",
+    "subtitle": "Your trusted partner in finding love, uniting hearts, and creating meaningful matrimonial journeys with ease.",
+    "des": "HM Expo Private Limited offers a modern and reliable platform for matrimonial services, helping you find the perfect life partner based on your preferences and needs. We provide profile browsing, personalized matchmaking considering family and individual choices, and a secure communication system. Trust us to assist you in starting the next chapter of your life with confidence."
+  },
+  "tatka": {
+    "title": "Tatka",
+    "subtitle": "Delivering fresh groceries daily to ensure your health, happiness, and convenience every step of the way.",
+    "des": "Tatka by HM Expo Private Limited offers fresh, high-quality groceries delivered right to your doorstep. From daily essentials like rice and spices to fresh vegetables and fruits, Tatka ensures convenience and quality. With a commitment to customer satisfaction, they bring a hassle-free shopping experience for households across Bangladesh. Freshness, reliability, and care—every time!"
+  },
+  "manioBD": {
+    "title": "ManioBD",
+    "subtitle": "Where style meets comfort and quality, creating timeless fashion for every moment in your life.",
+    "des": "ManioBD by HM Expo Private Limited redefines fashion with stylish, high-quality clothing for all. Combining modern trends with traditional elegance, ManioBD offers a wide range of apparel that ensures comfort and confidence. Dedicated to customer satisfaction, they bring timeless style to wardrobes across Bangladesh. Fashion, quality, and care—always with ManioBD!"
+  },
+  "recruitingAgency": {
+    "title": "Recruiting Agency",
+    "subtitle": "Connecting skilled professionals to global companies, building careers and fulfilling dreams across borders seamlessly.",
+    "des": "HM Expo Private Limited acts as a bridge between global companies and skilled professionals in Bangladesh. As a trusted recruiting agency, they assist individuals in securing international job opportunities while meeting the talent needs of companies abroad. With transparency and dedication, they simplify the recruitment journey for all."
+  },
+
+  "about": {
+    "t1":"About Us",
+    "t2":"We Have Been Working Faithfully From Nine Years Long",
+    "title": "HM Expo Private Limited - Your Trusted Partner for Travel, Overseas Recruitment, and More (Since 2012)",
+    "intro": "HM Expo Private Limited is a well-established and reputed company in Dhaka, Bangladesh, serving clients since 2012. We are dedicated to providing exceptional service, trust, and honesty in all our endeavors.",
+    "portfolioTitle": "Diverse Business Portfolio:",
+    "portfolio": "HM Expo operates across various sectors. We are a licensed travel agency (License No. 0012398), offering a comprehensive range of travel services for individuals and groups. Additionally, under the name HM Angel Overseas (Recruiting License No. 2129), we leverage our expertise to connect Bangladeshi manpower with international opportunities. Furthermore, HM Expo holds IRC License No. 280326111169720, enabling us to conduct import and export business ventures.",
+    "travelAgencyTitle": "Government Approved Travel Agency:",
+    "travelAgency": "Our travel agency services cater to your individual and group needs. Whether you're seeking a relaxing vacation, an exciting business trip, or assistance with visa processing, our team of experts is here to guide you every step of the way.",
+    "recruitmentTitle": "HM Angel Overseas: Your Recruitment Partner:",
+    "recruitment": "HM Expo operates under the name HM Angel Overseas with Recruiting License No. 2129. We leverage our expertise and network to connect skilled Bangladeshi manpower with international opportunities since 2012. Our commitment to safe migration ensures a smooth and secure process for both employers and employees.",
+    "valuesTitle": "Our Core Values:",
+    "values": [
+      { "label": "Trust and Transparency:", "description": "We believe in building strong relationships with our clients based on open communication and ethical business practices." },
+      { "label": "Quality Service:", "description": "We are committed to exceeding your expectations by delivering efficient, reliable, and cost-effective solutions across all our services." },
+      { "label": "Expertise and Experience:", "description": "Our team of professionals possesses in-depth knowledge in their respective fields, ensuring we provide the best possible guidance." }
+    ],
+    "closingTitle": "HM Expo - Your Gateway to the World",
+    "closing": "We are more than just a travel agency or a recruitment firm. We are your trusted partner, facilitating your journeys, career aspirations, and potentially your import/export needs. Contact us today and let HM Expo transform your plans and open doors to new opportunities."
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "addressTitle": "Our Address",
+    "address": "Twin Brooks-House No-08, Road-2B, Block-J, Level-2 Flat 8Z, Banshara, Vatara, Gulshan-2, Dhaka 1212",
+    "emailTitle": "Email Us",
+    "emails": ["hmexpo.portal@gmail.com", "hmimtob@gmail.com"],
+    "phoneTitle": "Call Us",
+    "phones": ["+8817 11419511", "+880 1775281033", "+8817 11333334"]
+  },
+
+  "demo":{
+    "x":"View All Products"
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "We Have Been Working Faithfully From Nine Years Long",
+    "faqImageAlt": "brand",
+    "questions": [
+      {
+        "title": "How can I pay for my appointment?",
+        "description": "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the transition does limit overflow."
+      },
+      {
+        "title": "What can I expect at my first consultation?",
+        "description": "This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the transition does limit overflow."
+      }
+    ]
+  },
+  
+  "banners":{
+    "banner": [
+      {
+        "path": "/banner/banner.jpeg",
+        "title": "Welcome to Our World",
+        "description": "Discover Amazing Possibilities"
+      },
+      {
+        "path": "/banner/banner2.jpeg",
+        "title": "Innovation & Excellence",
+        "description": "Leading the Future"
+      },
+      {
+        "path": "/banner/banner3.jpeg",
+        "title": "Creative Solutions",
+        "description": "Transforming Ideas into Reality"
+      },
+      {
+        "path": "/banner/banner4.jpeg",
+        "title": "Global Reach",
+        "description": "Connected Worldwide"
+      },
+      {
+        "path": "/banner/banner5.jpeg",
+        "title": "Premium Quality",
+        "description": "Excellence in Every Detail"
+      }
+    ]
+  },
+  "review":[
+    {
+      "name": "John Doe",
+      "rating": 5,
+      "review": "Absolutely amazing product! It has completely transformed my workflow."
+    },
+    {
+      "name": "Jane Smith",
+      "rating": 4,
+      "review": "Great value for money. I'm very satisfied with my purchase."
+    },
+    {
+      "name": "Mike Johnson",
+      "rating": 5,
+      "review": "The customer service is top-notch. They went above and beyond to help me."
+    },
+    {
+      "name": "Emily Brown",
+      "rating": 4,
+      "review": "I'm impressed with the quality. It exceeded my expectations."
+    }
+  ],  
+  "contact": {
+  "name": "Your Name",
+  "email": "Your Email",
+  "subject": "Subject",
+  "message": "Message",
+  "btn": "Send Message"
+},
+  "LanguageSwitcher": {
+    "switchLanguage": "বাংলা"
+  }
+}

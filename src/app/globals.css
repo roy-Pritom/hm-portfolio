@@ -185,3 +185,9 @@ body {
 .ty{
   border-radius: 0px 0px 0px 1500px;
 }
+
+.bh{
+  /* background: linear-gradient(to bottom right, rgb(254, 245, 247), rgb(254, 239, 243)); */
+  background: linear-gradient(to right, rgb(251, 251, 251), rgb(253, 251, 251), rgb(254, 241, 244));
+
+}

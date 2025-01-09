@@ -3,7 +3,6 @@ import ServiceHeroSection from '@/components/shared/ServiceHeroSection';
 import { TService } from '@/types/service';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import React from 'react';
 
 const AgencyPage = () => {
     const t = useTranslations("recruitingAgency");
@@ -12,14 +11,14 @@ const AgencyPage = () => {
       subtitle:t("subtitle"),
       title: t("title"),
       des: t("des"),
-      src: "/service/t.jpg",
+      src: "/service/recruiting.jpg",
     }
     return (
         <div>
                           <ServiceHeroSection data={serviceData} />
                                 <div className="grid md:grid-cols-5 grid-cols-1 gap-10 mt-14 container mx-auto">
                                   <div className="lg:col-span-3 md:col-span-3">
-                                      <div className="grid md:grid-cols-2 gap-4 ">
+                                      <div className="grid md:grid-cols-2 gap-4">
                                           {
                                               [
                                                 {src:"/gallery/IMG-20241230-WA0014.jpg"},

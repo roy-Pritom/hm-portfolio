@@ -1,4 +1,3 @@
-"use client";
 
 import { MapPin, Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";

@@ -2,7 +2,6 @@ import ServiceHeroSection from "@/components/shared/ServiceHeroSection";
 import { TService } from "@/types/service";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import React from "react";
 
 const VisaPage = () => {
   const t = useTranslations("visaAndAirTicketing");
@@ -11,7 +10,7 @@ const VisaPage = () => {
     subtitle: t("subtitle"),
     title: t("title"),
     des: t("des"),
-    src: "/service/t.jpg",
+    src: "/service/visa-air-ticking.jpg",
   };
   return (
     <div className="">
@@ -20,10 +19,14 @@ const VisaPage = () => {
              <div className="lg:col-span-3 md:col-span-3">
                  <div className="grid md:grid-cols-2 gap-4 ">
                      {
-                         Array(2).fill(0).map((_,i)=>(
+                      [
+                        {src:"/service/v.jpg"},
+                        {src:"/banner/6.jpg"},
+                      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                      ].map((item:any,i)=>(
                              <div key={i} className="flex items-center ">
                                  <Image
-                                     src="/service/visa.webp"
+                                     src={item.src}
                                      width={400}
                                      height={200}
                                      className=" rounded-md w-full lg:h-[240px] md:h-[180px] h-[250px] "

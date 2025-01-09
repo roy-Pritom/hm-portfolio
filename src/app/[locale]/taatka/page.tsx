@@ -2,7 +2,6 @@ import ServiceHeroSection from '@/components/shared/ServiceHeroSection';
 import { TService } from '@/types/service';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import React from 'react';
 
 const TaatkaLtdPage = () => {
     const t = useTranslations("tatka");
@@ -11,7 +10,7 @@ const TaatkaLtdPage = () => {
       subtitle:t("subtitle"),
       title: t("title"),
       des: t("des"),
-      src: "/service/t.jpg",
+      src: "/service/taatka.jpg",
     }
     return (
         <div>
@@ -21,8 +20,8 @@ const TaatkaLtdPage = () => {
                                       <div className="grid md:grid-cols-2 gap-4 ">
                                           {
                                               [
-                                                {src:"/gallery/IMG-20241230-WA0014.jpg"},
-                                                {src:"/gallery/IMG-20241230-WA0006.jpg"},
+                                                {src:"/service/fresh1.jpg"},
+                                                {src:"/service/fresh.jpg"},
                                               // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                               ].map((item:any,i)=>(
                                                   <div key={i} className="flex items-center ">

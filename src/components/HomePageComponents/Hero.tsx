@@ -85,7 +85,7 @@ import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { useTranslations } from "next-intl"
+// import { useTranslations } from "next-intl"
 
 // Banner content with titles and descriptions
 
@@ -127,35 +127,47 @@ const textVariants = {
 export default function Hero() {
   const [[page, direction], setPage] = useState([0, 0])
   const [isAnimating, setIsAnimating] = useState(false)
-  const t = useTranslations("banners");
+  // const t = useTranslations("banners");
 
 
   const bannerContent = [
     {
-      path: '/banner/banner.jpeg',
-      title: t('banner.0.title'),
-      description:t('banner.0.description')
+      path: '/banner/1.jpg',
+      // title: t('banner.0.title'),
+      // description:t('banner.0.description')
     },
     {
-      path: '/banner/banner2.jpeg',
-      title:  t('banner.1.title'),
-      description: t('banner.1.description')
+      path: '/banner/2.jpg',
+      // title:  t('banner.1.title'),
+      // description: t('banner.1.description')
     },
     {
-      path: '/banner/banner3.jpeg',
-      title: t('banner.2.title'),
-      description: t('banner.2.description')
+      path: '/banner/3.jpg',
+      // title: t('banner.2.title'),
+      // description: t('banner.2.description')
     },
     {
-      path: '/banner/banner4.jpeg',
-      title: t('banner.3.title'),
-      description: t('banner.3.description')
+      path: '/banner/4.jpg',
+      // title: t('banner.2.title'),
+      // description: t('banner.2.description')
     },
     {
-      path: '/banner/banner5.jpeg',
-      title: t('banner.4.title'),
-      description: t('banner.4.description')
+      path: '/banner/5.jpg',
+      // title: t('banner.3.title'),
+      // description: t('banner.3.description')
     },
+    {
+      path: '/banner/6.jpg',
+      // title: t('banner.4.title'),
+      // description: t('banner.4.description')
+    },
+    {
+      path: '/banner/7.jpg',
+      // title: t('banner.4.title'),
+      // description: t('banner.4.description')
+    },
+
+   
   ]
 
   const imageIndex = Math.abs(page % bannerContent.length)
@@ -172,7 +184,7 @@ export default function Hero() {
   }, [page])
 
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[510px] overflow-hidden mt-12 sm:mt-16 bg-black">
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[540px] overflow-hidden mt-[70px] bg-black">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={page}
@@ -202,7 +214,7 @@ export default function Hero() {
               className="brightness-75"
             />
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" /> */}
           </div>
 
           {/* Text content */}
@@ -216,14 +228,14 @@ export default function Hero() {
               variants={textVariants}
               className="text-4xl md:text-6xl font-bold text-center mb-4 text-white drop-shadow-lg"
             >
-              {bannerContent[imageIndex].title}
+              {/* {bannerContent[imageIndex].title} */}
             </motion.h2>
             <motion.p 
               variants={textVariants}
               transition={{ delay: 0.2 }}
               className="text-xl md:text-2xl text-center text-gray-200"
             >
-              {bannerContent[imageIndex].description}
+              {/* {bannerContent[imageIndex].description} */}
             </motion.p>
           </motion.div>
         </motion.div>

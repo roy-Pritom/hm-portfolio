@@ -1,5 +1,4 @@
 import Gallery from "@/components/GalleryComponents/Gallery";
-import React from "react";
 
 const GalleryPage = () => {
   return (

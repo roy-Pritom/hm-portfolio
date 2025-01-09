@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: "dream-school-landing-page",
+        name: "hm-portfolio",
         cwd: "/root/hm-portfolio",
         script: "node_modules/next/dist/bin/next",
         args: "start",

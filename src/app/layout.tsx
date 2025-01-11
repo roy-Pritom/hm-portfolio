@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Translator",
-  description: "A Bangla-English translator app",
+  title: "HmAngel",
+  description: "HmAngel corporation",
+  icons:{
+    icon:"/logo.png"
+  }
+
 };
 
 export default function RootLayout({

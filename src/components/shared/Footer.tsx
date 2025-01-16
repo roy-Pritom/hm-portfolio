@@ -162,7 +162,10 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-zinc-800/50 text-center text-xs text-zinc-400">
           <p className="hover:text-red-400 transition-colors duration-200">
-            Copyright © 2012-{new Date().getFullYear()} All Right Reserved. HM Web Design And Development.
+            Copyright © 2012-{new Date().getFullYear()} All Right Reserved. HM HM Angel Overseas Limited.
+          </p>
+          <p className="hover:text-red-400 transition-colors duration-200 mt-2 ">
+            Developed by - <Link href="https://wevloper.com" className='text-primaryColor'>wevloper</Link>
           </p>
         </div>
       <div className="mt-8 text-center">

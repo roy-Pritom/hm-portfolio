@@ -30,7 +30,7 @@ export default function Progress() {
         const progressRatio = Math.min(progress / duration, 1)
         const easedProgress = easeOutQuart(progressRatio)
         
-        setCount(Math.floor(easedProgress * 12))
+        setCount(Math.floor(easedProgress * 13))
 
         if (progress < duration) {
           animationFrameId = requestAnimationFrame(animate)

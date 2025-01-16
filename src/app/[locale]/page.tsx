@@ -1,4 +1,5 @@
 // import FeatureProject from '@/components/HomePageComponents/FeatureProject';
+import About from '@/components/HomePageComponents/About';
 import GallerySection from '@/components/HomePageComponents/GallerySection';
 import Hero from '@/components/HomePageComponents/Hero';
 import Progress from '@/components/HomePageComponents/Progress';
@@ -11,13 +12,14 @@ const HomePage = () => {
   return (
     <div>
       <Hero/>
-      <WhyChooseUs/>
+      <About/>
       <WhoWeAre/>
+      <WhyChooseUs/>
       <Progress/>
       <Services/>
+      <Review/>
       <GallerySection/>
       {/* <FeatureProject/> */}
-      <Review/>
      
     </div>
   );

@@ -96,7 +96,7 @@
     "btn":"Read More"
   },
   "progress":{
-    "title":"Tips & Articles",
+    "title":"Visa Processing",
     "subtitle":"We have been providing the service",
     "year":"Years"
   },
@@ -260,7 +260,15 @@
       "rating": 4,
       "review": "I'm impressed with the quality. It exceeded my expectations."
     }
-  ],  
+  ], 
+  "reviewHeading":{
+    "title":"What Our",
+    "title1":"Customer Say"
+  }, 
+  "aboutUs":{
+    "title":"HM Angel Overseas",
+    "title1":"RL-2129"
+  },
   "contact": {
   "name": "Your Name",
   "email": "Your Email",

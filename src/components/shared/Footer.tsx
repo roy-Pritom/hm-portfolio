@@ -165,7 +165,9 @@ export default function Footer() {
             Copyright © 2012-{new Date().getFullYear()} All Right Reserved. HM HM Angel Overseas Limited.
           </p>
           <p className="hover:text-red-400 transition-colors duration-200 mt-2 ">
-            Developed by - <Link href="https://wevloper.com" className='text-primaryColor'>wevloper</Link>
+            Developed by - <Link href="https://wevloper.com" target="_blank" rel="noopener noreferrer" className="text-primaryColor">
+    wevloper
+  </Link>
           </p>
         </div>
       <div className="mt-8 text-center">

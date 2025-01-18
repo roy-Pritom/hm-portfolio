@@ -9,37 +9,37 @@ const Services = () => {
       title: t("0.title"),
       description: t("0.description"),
       icon: "✈️",
-      image: "/home/s1.webp",
+      image: "/home/y1.webp",
     },
     {
       title: t("1.title"),
       description: t("1.description"),
       icon: "🛂",
-      image: "/home/s2.webp",
+      image: "/home/y2.webp",
     },
     {
       title: t("2.title"),
       description: t("2.description"),
       icon: "💻",
-      image: "/home/s3.webp",
+      image: "/home/y3.webp",
     },
     {
       title: t("3.title"),
       description: t("3.description"),
       icon: "📱",
-      image: "/home/s4.webp",
+      image: "/home/y4.webp",
     },
     {
       title: t("4.title"),
       description: t("4.description"),
       icon: "📑",
-      image: "/home/s5.webp",
+      image: "/home/y6.webp",
     },
     {
       title: t("5.title"),
       description: t("5.description"),
       icon: "🚢",
-      image: "/home/s6.webp",
+      image: "/home/y7.webp",
     },
   ];
 

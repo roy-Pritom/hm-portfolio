@@ -1,31 +1,49 @@
-"use client"
+"use client";
 
-
-import { Facebook, Youtube, Instagram, ArrowRight } from 'lucide-react'
-import Link from "next/link"
+import { Facebook, Youtube, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <div className="bg-zinc-900 text-zinc-100">
       <footer className="container mx-auto  py-8 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Our Sister Concern */}
           <div>
             <h2 className="text-lg font-bold mb-4 ">Our Sister Concern</h2>
             <ul className="space-y-3">
               {[
-                "HM Import Export",
-                "HM Software Firm",
-                "HM Web Design And Development Service",
-                "HM Tender BD",
-                "HM Travel Agency",
-                "HM WEDDINGS",
-                "Taatka Ltd.",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-1.5 text-sm hover:translate-x-1 transition-all duration-200">
+                {
+                  name: "HM Import Export",
+                  link: "/import-export",
+                },
+                {
+                  name: "HM Software Firm",
+                  link: "/software-development",
+                },
+                {
+                  name: "HM Web Design And Development Service",
+                  link: "/hm-wedding",
+                },
+                { name: "HM Tender BD", link: "/tender-service" },
+                {
+                  name: "HM Travel Agency",
+                  link: "/travel-agency",
+                },
+                { name: "HM WEDDINGS", link: "/hm-wedding" },
+                { name: "Taatka Ltd.", link: "/taatka" },
+                { name: "Manio Bd", link: "https://maniobd.com" },
+              ].map((item, index: number) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-1.5 text-sm hover:translate-x-1 transition-all duration-200"
+                >
                   <ArrowRight className="w-3.5 h-3.5 text-red-500 flex-shrink-0" />
-                  <Link href="#" className="hover:text-red-500 transition-colors">
-                    {item}
+                  <Link
+                    href={item.link}
+                    className="hover:text-red-500 transition-colors"
+                  >
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -33,7 +51,7 @@ export default function Footer() {
           </div>
 
           {/* Our Services */}
-          <div>
+          {/* <div>
             <h2 className="text-lg font-bold mb-4 ">Our Services</h2>
             <ul className="space-y-3">
               {[
@@ -45,15 +63,21 @@ export default function Footer() {
                 "WordPress Website Design And Development",
                 "Website Maintenance",
               ].map((service) => (
-                <li key={service} className="flex items-center gap-1.5 text-sm hover:translate-x-1 transition-all duration-200">
+                <li
+                  key={service}
+                  className="flex items-center gap-1.5 text-sm hover:translate-x-1 transition-all duration-200"
+                >
                   <ArrowRight className="w-3.5 h-3.5 text-red-500 flex-shrink-0" />
-                  <Link href="#" className="hover:text-red-500 transition-colors">
+                  <Link
+                    href="#"
+                    className="hover:text-red-500 transition-colors"
+                  >
                     {service}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Us */}
           <div>
@@ -78,18 +102,21 @@ export default function Footer() {
                     +8801711353034
                   </p>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-sm mb-1">TNT:</h3>
-                  <p className="text-zinc-300 text-sm">Your TNT number here</p>
-                </div>
+
                 <div>
                   <h3 className="font-semibold text-sm  mb-1">Email:</h3>
                   <p className="text-zinc-300 text-sm">
-                    <Link href="mailto:hmexpoprivateltd@gmail.com" className="hover:text-red-500 transition-colors">
+                    <Link
+                      href="mailto:hmexpoprivateltd@gmail.com"
+                      className="hover:text-red-500 transition-colors"
+                    >
                       hmexpoprivateltd@gmail.com
                     </Link>
                     <br />
-                    <Link href="mailto:hmltdbd@gmail.com" className="hover:text-red-500 transition-colors">
+                    <Link
+                      href="mailto:hmltdbd@gmail.com"
+                      className="hover:text-red-500 transition-colors"
+                    >
                       hmltdbd@gmail.com
                     </Link>
                   </p>
@@ -121,8 +148,12 @@ export default function Footer() {
                           index % 2 === 0 ? "bg-zinc-800/30" : "bg-zinc-800/10"
                         } hover:bg-zinc-700/30 transition-colors duration-200`}
                       >
-                        <td className="py-1.5 px-3 border-b border-zinc-700/50">{schedule.day}</td>
-                        <td className="py-1.5 px-3 border-b border-zinc-700/50 text-right text-red-200">{schedule.time}</td>
+                        <td className="py-1.5 px-3 border-b border-zinc-700/50">
+                          {schedule.day}
+                        </td>
+                        <td className="py-1.5 px-3 border-b border-zinc-700/50 text-right text-red-200">
+                          {schedule.time}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -131,29 +162,35 @@ export default function Footer() {
             </div>
 
             <div>
-              <h2 className="text-lg font-bold mb-4 text-red-500">Our Social Networks</h2>
+              <h2 className="text-lg font-bold mb-4 text-red-500">
+                Our Social Networks
+              </h2>
               <div className="flex gap-3">
                 <Link
-                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/hmangeloverseasltd"
                   className="bg-red-600/90 p-2 rounded-lg hover:bg-red-500 hover:scale-110 transition-all duration-200 shadow-lg"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-4 h-4" />
                 </Link>
                 <Link
-                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.youtube.com/@hmexpoprivatelimited"
                   className="bg-red-600/90 p-2 rounded-lg hover:bg-red-500 hover:scale-110 transition-all duration-200 shadow-lg"
                   aria-label="YouTube"
                 >
                   <Youtube className="w-4 h-4" />
                 </Link>
-                <Link
+                {/* <Link
                   href="#"
                   className="bg-red-600/90 p-2 rounded-lg hover:bg-red-500 hover:scale-110 transition-all duration-200 shadow-lg"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -162,24 +199,30 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-zinc-800/50 text-center text-xs text-zinc-400">
           <p className="hover:text-red-400 transition-colors duration-200">
-            Copyright © 2012-{new Date().getFullYear()} All Right Reserved. HM HM Angel Overseas Limited.
+            Copyright © 2012-{new Date().getFullYear()} All Right Reserved. HM
+            HM Angel Overseas Limited.
           </p>
           <p className="hover:text-red-400 transition-colors duration-200 mt-2 ">
-            Developed by - <Link href="https://wevloper.com" target="_blank" rel="noopener noreferrer" className="text-primaryColor">
-    wevloper
-  </Link>
+            Developed by -{" "}
+            <Link
+              href="https://wevloper.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primaryColor"
+            >
+              wevloper
+            </Link>
           </p>
         </div>
-      <div className="mt-8 text-center">
-        <button
-          className="w-12 h-12 bg-red-600 hover:bg-white hover:text-red-600 rounded-full shadow-md fixed bottom-6 right-6 transition-all"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          &uarr;
-        </button>
-      </div>
+        <div className="mt-8 text-center">
+          <button
+            className="w-12 h-12 bg-red-600 hover:bg-white hover:text-red-600 rounded-full shadow-md fixed bottom-6 right-6 transition-all"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            &uarr;
+          </button>
+        </div>
       </footer>
     </div>
-  )
+  );
 }
-

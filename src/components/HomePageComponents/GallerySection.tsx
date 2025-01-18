@@ -15,13 +15,14 @@ interface Photo {
   alt: string;
 }
 
+
 const photos: Photo[] = [
-  { id: 1, src: "/gallery/IMG-20241228-WA0001.jpg", alt: "Photo 1" },
-  { id: 2, src: "/gallery/IMG-20241228-WA0002.jpg", alt: "Photo 2" },
-  { id: 3, src: "/gallery/IMG-20241228-WA0003.jpg", alt: "Photo 3" },
-  { id: 4, src: "/gallery/IMG-20241228-WA0004.jpg", alt: "Photo 4" },
-  { id: 5, src: "/gallery/IMG-20241228-WA0005.jpg", alt: "Photo 5" },
-  { id: 6, src: "/gallery/IMG-20241228-WA0006.jpg", alt: "Photo 6" },
+  { id: 1, src: "/gallery/2.JPG", alt: "Photo 1" },
+  { id: 2, src: "/gallery/3.JPG", alt: "Photo 2" },
+  { id: 3, src: "/gallery/16.JPG", alt: "Photo 3" },
+  { id: 4, src: "/gallery/12.JPG", alt: "Photo 4" },
+  { id: 5, src: "/gallery/33.JPG", alt: "Photo 5" },
+  { id: 6, src: "/gallery/48.jpg", alt: "Photo 6" },
 ];
 
 export default function GallerySection() {
@@ -29,6 +30,8 @@ export default function GallerySection() {
     null
   );
   const [favorites, setFavorites] = useState<number[]>([]);
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [showFavorites, setShowFavorites] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const t=useTranslations('gallery');
@@ -68,12 +71,12 @@ export default function GallerySection() {
   };
 
   return (
-    <div className="container mx-auto  py-10  ">
-      <p className="lg:text-3xl md:text-[22px] text-xl font-bold text-red-600 mb-3 text-center">
+    <div className="container mx-auto  py-10  mt-5 ">
+      {/* <p className="lg:text-3xl md:text-[22px] text-xl font-bold text-red-600 mb-3 text-center">
         {t('title')}
-      </p>
+      </p> */}
 
-      <div className="flex justify-center mb-4">
+      {/* <div className="flex justify-center mb-4">
         <Button
           onClick={() => setShowFavorites(!showFavorites)}
           variant={showFavorites ? "default" : "outline"}
@@ -81,7 +84,7 @@ export default function GallerySection() {
         >
           {showFavorites ? t("btn") : t('Favorites') }
         </Button>
-      </div>
+      </div> */}
 
       {/* <div className="col-span-5">
             <ImageCarousel photos={photos} onPhotoClick={handlePhotoClick} />

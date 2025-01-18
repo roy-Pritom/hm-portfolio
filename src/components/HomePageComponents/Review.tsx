@@ -89,7 +89,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/1.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -119,7 +119,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/2.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -149,7 +149,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/3.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -178,7 +178,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/4.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -208,7 +208,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/5.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -238,7 +238,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/6.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -267,7 +267,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/7.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -297,7 +297,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/8.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"
@@ -309,7 +309,7 @@ export function Review() {
   
           <CarouselItem className="pl-2 sm:pl-4 sm:basis-1/2 lg:basis-1/3">
             <Link
-              href="https://youtu.be/1iKzkwohLN0?si=NsVzoPP-j5ymW6fq"
+              href="https://youtu.be/zaGNPgh04kg?si=aGZGbGK79ZTCg9CA"
               className="cursor-pointer"
             >
               <div className="relative h-[280px] rounded-md overflow-hidden group cursor-pointer">
@@ -327,7 +327,7 @@ export function Review() {
 
                 {/* Image */}
                 <Image
-                  src="/service/t.jpg"
+                  src="/review/9.jpg"
                   width={400}
                   height={400}
                   className="object-cover h-full w-full rounded-md"

@@ -1,18 +1,17 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { Card, CardContent } from "@/components/ui/card"
-import { Dialog, DialogContent } from '@/components/ui/dialog'
-import { Button } from "@/components/ui/button"
-import { Heart, ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
 // import { ImageCarousel } from './ImageCarousel'
 
-
 interface Photo {
-  id: number
-  src: string
-  alt: string
+  id: number;
+  src: string;
+  alt: string;
 }
 
 const photos: Photo[] = [
@@ -59,58 +58,112 @@ const photos: Photo[] = [
   { id: 41, src: "/gallery/IMG-20241230-WA0013.jpg", alt: "Photo 41" },
   { id: 42, src: "/gallery/IMG-20241230-WA0014.jpg", alt: "Photo 42" },
   { id: 43, src: "/gallery/IMG-20241230-WA0015.jpg", alt: "Photo 43" },
-
+  { id: 44, src: "/gallery/1.JPG", alt: "Photo 44" },
+  { id: 45, src: "/gallery/2.JPG", alt: "Photo 45" },
+  { id: 46, src: "/gallery/3.JPG", alt: "Photo 46" },
+  { id: 47, src: "/gallery/4.JPG", alt: "Photo 47" },
+  { id: 48, src: "/gallery/5.JPG", alt: "Photo 48" },
+  { id: 49, src: "/gallery/6.JPG", alt: "Photo 49" },
+  { id: 50, src: "/gallery/7.JPG", alt: "Photo 50" },
+  { id: 51, src: "/gallery/8.JPG", alt: "Photo 51" },
+  { id: 52, src: "/gallery/9.JPG", alt: "Photo 52" },
+  { id: 53, src: "/gallery/10.JPG", alt: "Photo 53" },
+  { id: 54, src: "/gallery/11.JPG", alt: "Photo 54" },
+  { id: 55, src: "/gallery/12.JPG", alt: "Photo 55" },
+  { id: 56, src: "/gallery/13.JPG", alt: "Photo 56" },
+  { id: 57, src: "/gallery/14.JPG", alt: "Photo 57" },
+  { id: 58, src: "/gallery/15.JPG", alt: "Photo 58" },
+  { id: 59, src: "/gallery/16.JPG", alt: "Photo 59" },
+  { id: 60, src: "/gallery/17.JPG", alt: "Photo 60" },
+  { id: 61, src: "/gallery/18.JPG", alt: "Photo 61" },
+  { id: 62, src: "/gallery/19.JPG", alt: "Photo 62" },
+  { id: 63, src: "/gallery/20.JPG", alt: "Photo 63" },
+  { id: 64, src: "/gallery/21.JPG", alt: "Photo 64" },
+  { id: 65, src: "/gallery/22.JPG", alt: "Photo 65" },
+  { id: 66, src: "/gallery/23.JPG", alt: "Photo 66" },
+  { id: 67, src: "/gallery/24.JPG", alt: "Photo 67" },
+  { id: 68, src: "/gallery/25.JPG", alt: "Photo 68" },
+  { id: 69, src: "/gallery/26.JPG", alt: "Photo 69" },
+  { id: 70, src: "/gallery/27.JPG", alt: "Photo 70" },
+  { id: 71, src: "/gallery/28.JPG", alt: "Photo 71" },
+  { id: 72, src: "/gallery/29.JPG", alt: "Photo 72" },
+  { id: 73, src: "/gallery/30.JPG", alt: "Photo 73" },
+  { id: 74, src: "/gallery/31.JPG", alt: "Photo 74" },
+  { id: 75, src: "/gallery/32.JPG", alt: "Photo 75" },
+  { id: 76, src: "/gallery/33.JPG", alt: "Photo 76" },
+  { id: 77, src: "/gallery/34.JPG", alt: "Photo 77" },
+  { id: 78, src: "/gallery/35.JPG", alt: "Photo 78" },
+  { id: 79, src: "/gallery/36.JPG", alt: "Photo 79" },
+  { id: 80, src: "/gallery/37.JPG", alt: "Photo 80" },
+  { id: 81, src: "/gallery/38.JPG", alt: "Photo 81" },
+  { id: 82, src: "/gallery/39.JPG", alt: "Photo 82" },
+  { id: 83, src: "/gallery/40.JPG", alt: "Photo 83" },
+  { id: 84, src: "/gallery/41.JPG", alt: "Photo 84" },
+  { id: 85, src: "/gallery/42.JPG", alt: "Photo 85" },
+  { id: 86, src: "/gallery/43.JPG", alt: "Photo 86" },
+  { id: 87, src: "/gallery/44.JPG", alt: "Photo 87" },
+  { id: 88, src: "/gallery/45.JPG", alt: "Photo 88" },
+  { id: 89, src: "/gallery/46.JPG", alt: "Photo 89" },
+  { id: 90, src: "/gallery/47.JPG", alt: "Photo 90" },
+  { id: 91, src: "/gallery/48.JPG", alt: "Photo 91" },
+  { id: 92, src: "/gallery/49.JPG", alt: "Photo 92" },
+  { id: 93, src: "/gallery/50.JPG", alt: "Photo 93" },
+  { id: 94, src: "/gallery/51.JPG", alt: "Photo 94" },
+  { id: 95, src: "/gallery/52.JPG", alt: "Photo 95" },
 ];
 
-
-
 export default function Gallery() {
-  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null)
-  const [favorites, setFavorites] = useState<number[]>([])
-  const [showFavorites, setShowFavorites] = useState(false)
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(
+    null
+  );
+  const [favorites, setFavorites] = useState<number[]>([]);
+  const [showFavorites, setShowFavorites] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   useEffect(() => {
-    const storedFavorites = localStorage.getItem('favorites')
+    const storedFavorites = localStorage.getItem("favorites");
     if (storedFavorites) {
-      setFavorites(JSON.parse(storedFavorites))
+      setFavorites(JSON.parse(storedFavorites));
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify(favorites))
-  }, [favorites])
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
 
   const toggleFavorite = (id: number) => {
-    setFavorites(prev => 
-      prev.includes(id) ? prev.filter(favId => favId !== id) : [...prev, id]
-    )
-  }
+    setFavorites((prev) =>
+      prev.includes(id) ? prev.filter((favId) => favId !== id) : [...prev, id]
+    );
+  };
 
-  const navigatePhoto = (direction: 'prev' | 'next') => {
-    if (selectedPhotoIndex === null) return
-    const newIndex = direction === 'prev' 
-      ? (selectedPhotoIndex - 1 + photos.length) % photos.length 
-      : (selectedPhotoIndex + 1) % photos.length
-    setSelectedPhotoIndex(newIndex)
-  }
+  const navigatePhoto = (direction: "prev" | "next") => {
+    if (selectedPhotoIndex === null) return;
+    const newIndex =
+      direction === "prev"
+        ? (selectedPhotoIndex - 1 + photos.length) % photos.length
+        : (selectedPhotoIndex + 1) % photos.length;
+    setSelectedPhotoIndex(newIndex);
+  };
 
-  const displayedPhotos = showFavorites ? photos.filter(photo => favorites.includes(photo.id)) : photos
+  const displayedPhotos = showFavorites
+    ? photos.filter((photo) => favorites.includes(photo.id))
+    : photos;
 
   const handlePhotoClick = (index: number) => {
-    setSelectedPhotoIndex(index)
-    setIsDialogOpen(true)
-  }
+    setSelectedPhotoIndex(index);
+    setIsDialogOpen(true);
+  };
 
   return (
     <div className="container mx-auto  py-8 bg-gray-100 ">
-        {/* <div className="">
+      {/* <div className="">
 
           <ImageCarousel photos={photos} onPhotoClick={handlePhotoClick} />
         </div> */}
 
       <div className="flex justify-center mb-4">
-        <Button 
+        <Button
           onClick={() => setShowFavorites(!showFavorites)}
           variant={showFavorites ? "default" : "outline"}
           className="mr-2"
@@ -119,37 +172,46 @@ export default function Gallery() {
         </Button>
       </div>
 
-        {/* <div className="col-span-5">
+      {/* <div className="col-span-5">
           <ImageCarousel photos={photos} onPhotoClick={handlePhotoClick} />
         </div> */}
-        <div className=" grid grid-cols-2 sm:grid-cols-5 gap-4 ">
-          {displayedPhotos.map((photo, index) => (
-            <Card key={photo.id} className="overflow-hidden cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105">
-              <CardContent className="p-0 relative">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={300}
-                  height={300}
-                  className="w-full xl:h-[210px] h-full object-cover"
-                  onClick={() => handlePhotoClick(index)}
+      <div className=" grid grid-cols-2 sm:grid-cols-5 gap-4 ">
+        {displayedPhotos.map((photo, index) => (
+          <Card
+            key={photo.id}
+            className="overflow-hidden cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105"
+          >
+            <CardContent className="p-0 relative">
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={300}
+                height={300}
+                className="w-full xl:h-[210px] h-full object-cover"
+                onClick={() => handlePhotoClick(index)}
+              />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute top-2 right-2 bg-white/80 hover:bg-white"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleFavorite(photo.id);
+                }}
+              >
+                <Heart
+                  className={`h-4 w-4 ${
+                    favorites.includes(photo.id)
+                      ? "fill-red-500 text-red-500"
+                      : "text-gray-500"
+                  }`}
                 />
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="absolute top-2 right-2 bg-white/80 hover:bg-white"
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    toggleFavorite(photo.id)
-                  }}
-                >
-                  <Heart className={`h-4 w-4 ${favorites.includes(photo.id) ? 'fill-red-500 text-red-500' : 'text-gray-500'}`} />
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="max-w-3xl w-full p-0 bg-black border-none">
           <div className="relative border-none">
@@ -166,13 +228,19 @@ export default function Gallery() {
               className="absolute top-4 left-4 bg-white/80 hover:bg-white"
               onClick={() => toggleFavorite(photos[selectedPhotoIndex || 0].id)}
             >
-              <Heart className={`h-6 w-6 ${favorites.includes(photos[selectedPhotoIndex || 0].id) ? 'fill-red-500 text-red-500' : 'text-gray-500'}`} />
+              <Heart
+                className={`h-6 w-6 ${
+                  favorites.includes(photos[selectedPhotoIndex || 0].id)
+                    ? "fill-red-500 text-red-500"
+                    : "text-gray-500"
+                }`}
+              />
             </Button>
             <Button
               variant="ghost"
               size="icon"
               className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white"
-              onClick={() => navigatePhoto('prev')}
+              onClick={() => navigatePhoto("prev")}
             >
               <ChevronLeft className="h-6 w-6" />
             </Button>
@@ -180,7 +248,7 @@ export default function Gallery() {
               variant="ghost"
               size="icon"
               className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white"
-              onClick={() => navigatePhoto('next')}
+              onClick={() => navigatePhoto("next")}
             >
               <ChevronRight className="h-6 w-6" />
             </Button>
@@ -188,6 +256,5 @@ export default function Gallery() {
         </DialogContent>
       </Dialog>
     </div>
-  )
+  );
 }
-
